@@ -1,0 +1,12 @@
+%h3= "Task List"
+
+= link_to_function "test js", '$(this).html("js works")'
+
+= form_for Task.new do |f|
+  = f.label :name, "New Task:"
+  = f.text_field :name
+  = f.submit "Add"
+
+%ul
+  - for task in @tasks
+    %li= task.name

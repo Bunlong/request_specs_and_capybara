@@ -1,0 +1,13 @@
+- Add gem in Gemfile
+  
+
+  group :development, :test do
+    gem 'rspec-rails'  
+  end
+
+- Terminal
+  
+  rails g rspec:install
+  rails g integration_test task
+
+- rake spec:features
